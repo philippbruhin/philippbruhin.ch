@@ -2328,7 +2328,7 @@ body {
 
 #particles-js {
   color: #003399;
-  background: linear-gradient(-45deg, #003399, #032cbe, #003399, #1c65f7);
+  background: linear-gradient(-45deg, #0548cc, #032cbe, #003399, #1c65f7);
   background-size: 400% 400%;
   -webkit-animation: Gradient 20s ease infinite;
   animation: Gradient 20s ease infinite; }
