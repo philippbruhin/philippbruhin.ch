@@ -2,8 +2,6 @@
 
 Visit [philippbruhin.ch](https://www.philippbruhin.ch) to see this theme live.
 
-* * *
-
 ## Credits
 
 * [Base Starter](https://github.com/getbase/starter)
