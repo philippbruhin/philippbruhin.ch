@@ -29,6 +29,16 @@ body {
     letter-spacing: 0.2rem;
 }
 
+::selection {
+    background: #fff;
+    color: #003399;
+}
+
+::-moz-selection  {
+    background: #fff;
+    color: #003399;   
+}
+
 #particles-js {
     position:fixed;
     top:0;
@@ -91,7 +101,17 @@ body {
     flex-direction: column;
 }
 
-.container-l {
-    margin-left: 0;
+main {
     flex: 1;
+    p.inline-text {
+        background-color: rgba($color: #039, $alpha: 0.8);
+        display: inline;
+    }
+    h3 {
+        margin-top: 2em;
+    }
+}
+
+.container, .container-l, .container-m {
+    margin-left: 0;
 }
