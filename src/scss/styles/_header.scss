@@ -1,55 +1,19 @@
 // Header
-#particles-js {
-    position:fixed;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    z-index:0; 
-}
-
-
-#particles-js {
-	color: #fff;
-	background: linear-gradient(-45deg, #00356B, rgb(1, 58, 116), #002299, #003399);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease forwards;
-	-moz-animation: Gradient 15s ease forwards;
-	animation: Gradient 15s ease forwards;
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	100% {
-		background-position: 100% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	100% {
-		background-position: 100% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	100% {
-		background-position: 100% 50%
-	}
-}
-
-#wrapper {
-    position: relative;    
-}
-
 #logo {
     margin-top: 2em;
     margin-bottom: 2em;
+    svg {
+        transition: all .3s;
+        max-width: 200px;
+        fill: #fff;
+        .primary-logo-color {
+            fill: #fff;
+        }
+    }
+    svg:hover {
+        fill: #000;
+        .primary-logo-color {
+            fill: #003399;
+        }
+    }
 }
