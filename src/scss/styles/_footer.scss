@@ -1,4 +1,22 @@
 // Footer
 footer {
     margin-top: 4em;
+    margin-bottom: 1em;
+    ul {
+        list-style-type: none;
+        margin: 2em 0;
+        padding: 0;
+    }
+}
+
+@include breakpoint(m) {
+    footer {
+        ul {
+            margin: 0;
+            li {
+                display: inline;
+                margin: 0 0.3em 0 0;
+            }
+        }
+    }
 }
