@@ -1,0 +1,178 @@
+// ==========================================================================
+// Website or App Stylesheet
+// ==========================================================================
+
+// Variables and Colours
+@import "styles/variables-colors";
+
+// Import Base & Modules
+//@import "../../node_modules/@getbase/animations/scss/index";
+@import "../../node_modules/@getbase/base/scss/index";
+//@import "../../node_modules/@getbase/buttons/scss/index";
+@import "../../node_modules/@getbase/containers/scss/index";
+//@import "../../node_modules/@getbase/forms/scss/index";
+@import "../../node_modules/@getbase/grid/scss/index";
+// @import "../../node_modules/@getbase/micro-grid/scss/index";
+//@import "../../node_modules/@getbase/tables/scss/index";
+@import "../../node_modules/@getbase/typography/scss/index";
+
+// Overall Styles
+@import "styles/header";
+@import "styles/footer";
+
+// Base Typography and Layout Helpers
+@import "../../node_modules/@getbase/typography-helpers/scss/index";
+@import "../../node_modules/@getbase/layout-helpers/scss/index";
+@import "../../node_modules/@getbase/layout-spacers/scss/index";
+
+body {
+    letter-spacing: 0.2rem;
+    overflow-x:hidden;
+}
+
+::selection {
+    background: #fff;
+    color: #003399;
+}
+
+::-moz-selection  {
+    background: #fff;
+    color: #003399;   
+}
+
+#particles-js {
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:0; 
+}
+
+#particles-js {
+	color: #003399;
+	background: linear-gradient(-45deg, #0548cc, #032cbe, #003399, #1c65f7);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 20s ease infinite;
+	-moz-animation: Gradient 20s ease infinite;
+	animation: Gradient 20s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+#wrapper {
+    position: relative;    
+}
+
+main {
+    p.inline-text {
+        background-color: rgba($color: #039, $alpha: 0.8);
+        display: inline;
+    }
+    h3 {
+        margin-top: 2em;
+    }
+}
+
+.container, .container-l, .container-m {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+// Typography
+body {
+	font-size: $base-font-size*0.8;
+	line-height: $base-line-height*0.8;
+}
+
+h1, .fs-1 {
+	font-size: $base-h1-font-size*0.7;
+	line-height: $base-h1-line-height*0.7;
+}
+h2, .fs-2 {
+	font-size: $base-h2-font-size*0.7;
+	line-height: $base-h2-line-height*0.7;
+}
+h3, .fs-3 {
+	font-size: $base-h3-font-size*0.7;
+	line-height: $base-h3-line-height*0.7;
+}
+h4, .fs-4 {
+	font-size: $base-h4-font-size*0.7;
+	line-height: $base-h4-line-height*0.7;
+}
+h5, .fs-5 {
+	font-size: $base-h5-font-size*0.7;
+	line-height: $base-h5-line-height*0.7;
+}
+h6, .fs-6 {
+	font-size: $base-h6-font-size*0.7;
+	line-height: $base-h6-line-height*0.7;
+}
+
+@include breakpoint(m) {
+	body {
+		font-size: $base-font-size;
+		line-height: $base-line-height;
+	}
+
+	h1, .fs-1 {
+		font-size: $base-h1-font-size;
+		line-height: $base-h1-line-height;
+	}
+	h2, .fs-2 {
+		font-size: $base-h2-font-size;
+		line-height: $base-h2-line-height;
+	}
+	h3, .fs-3 {
+		font-size: $base-h3-font-size;
+		line-height: $base-h3-line-height;
+	}
+	h4, .fs-4 {
+		font-size: $base-h4-font-size;
+		line-height: $base-h4-line-height;
+	}
+	h5, .fs-5 {
+		font-size: $base-h5-font-size;
+		line-height: $base-h5-line-height;
+	}
+	h6, .fs-6 {
+		font-size: $base-h6-font-size;
+		line-height: $base-h6-line-height;
+	}
+}

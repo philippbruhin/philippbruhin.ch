@@ -2,6 +2,7 @@
 .config.codekit
 .codekit.cache
 .idea/
+dist/
 scss/.sass-cache
 config.codekit
 node_modules/
