@@ -4,6 +4,10 @@
 // Variables and Colours
 @import "styles/variables-colors";
 
+$breakpoint-m:  768px;
+$breakpoint-l:  800px;
+$breakpoint-xl: 900px;
+
 // Import Base & Modules
 @import "~@getbase/animations/scss/index";
 @import "~@getbase/base/scss/index";
@@ -32,8 +36,8 @@ body {
 html { 
 	background-image: url('../img/copyright_philippbruhin.jpg');
 	background-repeat: no-repeat;
-	position: center center;
-	background-position: fixed; 
+	background-position: center center;
+	background-attachment: fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -64,18 +68,15 @@ html {
 }
 
 main {
-    p.inline-text {
-        background-color:#fff;
-        display: inline;
-    }
     h3 {
         margin-top: 2em;
     }
 }
 
 .container, .container-l, .container-m {
-    margin-left: 0;
-    margin-right: 0;
+	background-color: rgba($color: #fff, $alpha: 0.8);
+	margin: 1em 0 1em 0;
+	padding: 1em 1em 0.5em 1em;
 }
 
 // Typography
