@@ -29,6 +29,17 @@ body {
     overflow-x:hidden;
 }
 
+html { 
+	background-image: url('../img/copyright_philippbruhin.jpg');
+	background-repeat: no-repeat;
+	position: center center;
+	background-position: fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 ::selection {
     background: #fff;
     color: #003399;
@@ -48,59 +59,13 @@ body {
     z-index:0; 
 }
 
-#particles-js {
-	color: #003399;
-	background: linear-gradient(-45deg, #0548cc, #032cbe, #003399, #1c65f7);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 20s ease infinite;
-	-moz-animation: Gradient 20s ease infinite;
-	animation: Gradient 20s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-
 #wrapper {
     position: relative;    
 }
 
 main {
     p.inline-text {
-        background-color: rgba($color: #039, $alpha: 0.8);
+        background-color:#fff;
         display: inline;
     }
     h3 {
