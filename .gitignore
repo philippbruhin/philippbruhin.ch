@@ -6,4 +6,5 @@ scss/.sass-cache
 config.codekit
 node_modules/
 bower_components/
+dist/
 npm-debug.log
